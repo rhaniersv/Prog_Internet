@@ -1,0 +1,21 @@
+server:
+  port: 8080
+  servlet:
+    contextPath: /trem
+
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://192.168.1.190:5432/trem
+    username: postgres
+    password: 12345
+    
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+      dialect: org.hibernate.dialect.PostgreSQL94Dialect
+    properties:
+      hibernate:
+        temp.use_jdbc_metadata_defaults: false  
